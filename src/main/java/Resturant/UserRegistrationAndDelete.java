@@ -39,7 +39,6 @@ public class UserRegistrationAndDelete {
 		String manoj21 = new ExcelUtility ().getDataFromExcl(Iconstantpath.EXCELPATH,"Testdata",5,1);
 		String manoj31 = new ExcelUtility ().getDataFromExcl(Iconstantpath.EXCELPATH,"Testdata",4,1);
 		String manoj41 = new ExcelUtility ().getDataFromExcl(Iconstantpath.EXCELPATH,"Testdata",6,1);
-//manu
 		WebDriverUtility webdriverutility = new WebDriverUtility();
 		JavaUtility j = new JavaUtility();
 		int Random = j.RandomNumber(1000);
@@ -47,7 +46,8 @@ public class UserRegistrationAndDelete {
 		webdriverutility.waittillpageload(driver, 10);
 		webdriverutility.Opentheapplication(driver, manoj2);
 		webdriverutility.maximizeBrowser(driver);
-	   
+		System.out.println("manu54351165ryty5439");
+
 		driver.findElement(By.xpath("//a[text()='Login']")).click();
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys(manoj);    
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(manoj1);    
